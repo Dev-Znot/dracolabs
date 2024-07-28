@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dracolabs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "home/css/styles.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+    <nav class="section-m1" id="nav">
+        
+        <a href="{% url "landpage:home" %}"><img class="logo" src="{% static "home/img/logo.png" %}" alt="logo.png"></a>
+    
+        <ul id="navbar">
+          <li><a onclick="scrollToSection('hero')">Inicio</a></li>
+          <li><a onclick="scrollToSection('about')">Sobre Nós</a></li>
+          <li><a onclick="scrollToSection('solution')">Projetos</a></li>
+          <li><a onclick="scrollToSection('provide')">Soluções</a></li>
+          <li class="last"><a onclick="scrollToSection('new-letter')"><button>Fale conosco</button></a></li>
+        </ul>
+        
+    
+    </nav>
+    
+    {% block content %}{% endblock %}
+
+    <footer class="section-p1">
+
+        <div class="col">
+            <img class="logo" src="{% static 'home/img/logo.png' %}" alt="logo.png">
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>address</p>
+            <p><strong>Whatsapp: </strong>(+001) 0000-0000</p>
+            <p><strong>Horas: </strong>9:00 - 17:30, Seg - Sex</p>
+            <div class="follow">
+            <h4>Nós Siga</h4>
+            <div class="icon">
+                <a href="https://www.instagram.com/dracolabs.com.br?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073366257833"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Politica de privacidade</a>
+            <a href="#">Termos & Condições</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 | Todos os direitos reservados</p>
+        </div>
+    
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <script>
+      
+      const words = ['Aprimoram', 'Melhoram']
+
+      let mainTimeline = gsap.timeline({
+        repeat: -1
+      })
+
+      words.forEach(word => {
+        let textTimeline = gsap.timeline({
+          repeat: 1,
+          yoyo: true,
+          repeatDelay: 4
+        })
+
+        textTimeline.to('#typewriter', {
+          text: word,
+          duration: 1
+        })
+
+        mainTimeline.add(textTimeline)
+      })
+
+    </script>
+
+    <script src="{% static "home/js/scripts.js" %}"></script>
+  </body>
+</html>

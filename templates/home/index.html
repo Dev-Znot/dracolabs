@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <section id="hero" class="section-p1">
+
+    <img src="{% static "home/img/hero.jpg" %}" alt="">
+
+    <div class="text">
+      <div class="title1">Soluções que</div>
+      <div class="title2"><span id="typewriter"></span></div>
+      <div class="title3">o seu</div>
+      <div class="title4">NEGÓCIO.</div>
+    </div>
+
+  </section>
+  
+  <section id="about" class="section-p1">
+
+    <div class="conteiner">
+
+      <div class="box-title">
+        <div class="title">Sobre nós</div>
+        <div class="sub-title">Um pouco da DracoLabs & nossa Equipe</div>
+      </div>
+
+      <div class="content">
+        <p>Na <strong>Dracolabs</strong>, acreditamos que o sucesso começa com a estratégia e execução integradas à <i>Tecnologia</i>. Somos uma agência de marketing comprometida a potencialziar nossos clientes e auxiliá-los a alcançar novos patamaresde exelência digital.</p>
+        <p>O que nós destaca? Não apenas nossa expertise técnica, mas tambem nossa dedicação em compreender profudamente o seu negócio e os desafios que você enfrenta. Não nós contentamos com com soluções genéricas; priorizamos estratégias moldadas para atender suas necessidades específicas.</p>
+      </div>
+
+      <img src="{% static "home/img/dragao.png" %}" alt="">
+
+    </div>
+
+  </section>
+
+  <section id="solution" class="section-p1">
+
+    <h2>Empresas parceiras</h2>
+
+    <div class="container">
+
+      <div class="slide">
+
+        <div class="item" style="background-image: url(././static/home/img/img1.png);">
+          <div class="content">
+            <div class="name"></div>
+            <div class="des"></div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(././static/home/img/img2.png);">
+          <div class="content">
+            <div class="name">2effe Sport</div>
+            <div class="des">Uma confecção de roupas que confia na dracolabs</div>
+            <button><a href="http://35.199.66.97">Veja mais</a></button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(././static/home/img/img3.png);">
+          <div class="content">
+            <div class="name"></div>
+            <div class="des"></div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(././static/home/img/img4.png);">
+          <div class="content">
+            <div class="name"></div>
+            <div class="des"></div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(././static/home/img/img5.png);">
+          <div class="content">
+            <div class="name"></div>
+            <div class="des"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="button">
+
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+
+      </div>
+
+    </div>
+
+  </section>
+    
+  <section id="quality" class="section-p1">
+    <h4>Pilares da <strong>Dracolabs</strong>:</h4>
+
+    <div class="conteiner">
+
+      <div class="block">
+        <img src="{% static "home/img/diamante.png" %}" alt="">
+        <h2>Qualidade</h2>
+        <p>Vamos além das estratégias convencionais, empregamos insights orientados por dados para assegurar que cada decisão seja fundamentada e focada em alcançar resultados concretos</p>
+      </div>
+
+      <div class="block">
+        <img src="{% static "home/img/aquarela.png" %}" alt="">
+        <h2>Design</h2>
+        <p>Com muita inventividade, transformamos o seu negócio em uma vitrine irresistível para o seu público-alvo, tornando-o ainda mais atrativo e envolvente.
+        </p>
+      </div>
+
+      <div class="block">
+        <img src="{% static "home/img/grafico.png" %}" alt="">
+        <h2>Tecnologia</h2>
+        <p>Assim como nossa equipe é extremamente envolvida e dinâmica, comprometemo-nos a trabalhar de forma íntegra e totalmente alinhada com os seus projetos, utilizando tecnologia de ponta e ferramentas avançadas para alcançar sempre os melhores resultados possíveis.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="entertain" class="section-p1">
+
+    <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    <div class="ilus-text">
+      <h2>Renove.</h2>
+      <h2>Destaque-se.</h2>
+      <h2>Evolua.</h2>
+    </div>
+
+  </section>
+
+  <section id="text" class="section-p1">
+
+    <div class="info-text">
+      <h4>Na DracoLabs, implementamos uma metodologia integrada fundamentada em três pilares cruciais: Qualidade, Design e Tecnologia.</h4>
+
+      <h4>Combinamos esses componentes para assegurar uma presença online marcante, concentrada não apenas em atrair, mas também em engajar e converter nosso público-alvo.</h4>
+    </div>
+
+  </section>
+
+  <section id="provide" class="section-p1">
+    
+    <h2>O que a <strong>Dracolabs</strong> pode fazer por você?</h2>
+
+    <div class="block">
+
+      <div class="content">
+        <div class="title">Branding & identidade</div>
+        <div class="sub-title">Posicionamento / Tom de voz / Naming / Manifesto / Arquitetura de marca / Identidade visual / Brandbook</div>
+        <img src="{% static "home/img/branding.jpg" %}" alt="">
+        <div class="des">
+          Dê vida à sua história. Branding estratégico que transforma sua marca em uma narrativa inesquecível, conectando você ao seu público de forma autêntica e memorável.
+        </div>
+        <div class="link"><a href="#">Saiba mais <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="content">
+        <div class="title">Web Design</div>
+        <div class="sub-title">Design e protótipo / Desenvolvimento / Websites institucionais / Landing pages / E-commerce</div>
+        <img src="{% static "home/img/webdesign.jpg" %}" alt="">
+        <div class="des">
+          Com websites que convertem e encantam seus clientes, combinamos design intuitivo e visualmente atraente com desenvolvimento otimizado para performance e conversão.
+        </div>
+        <div class="link"><a href="#">Saiba mais <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+      <div class="content">
+        <div class="title">Growth Marketing</div>
+        <div class="sub-title">Tráfego / Otimização de SEO / Marketing de conteúdo / Mídias Sociais / Automação</div>
+        <img src="{% static "home/img/grouwth.jpg" %}" alt="">
+        <div class="des">
+          Atraia, converta e fidelize seus clientes com a DRACOLABS. Estratégias para impulsionar seu crescimento, aumentar suas vendas e alcançar seus objetivos de negócios.
+        </div>
+        <div class="link"><a href="#">Saiba mais <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+
+    </div>
+
+  </section>  
+
+  <section id="meta" class="section-p1">
+
+    <div class="principal-title">
+
+      <h2>Você acha que está explorando todas as oportunidades que as plataformas digitais podem oferecer para o seu benefício?</h2>
+      
+      <h4>Por meio do digital, vamos auxiliar seu negócio a:</h4>
+      
+    </div>
+
+    <div class="block">
+
+      <div class="block-content">
+        <div class="title">
+          <h1>01</h1>
+          <h4>Aumentar o reconhecimento</h4>
+        </div>
+        <div class="content">
+          <p><i class="fa-regular fa-circle"></i> Criar e fortalecer a presença online da sua empresa.</p>
+          <p><i class="fa-regular fa-circle"></i> Torná-la mais visível para o público-alvo.</p>
+          <p><i class="fa-regular fa-circle"></i> Construir uma imagem positiva e confiável.</p>
+        </div>
+      </div>
+
+      <div class="block-content">
+        <div class="title">
+          <h1>02</h1>
+          <h4>Ficar à frente da concorrência</h4>
+        </div>
+        <div class="content">
+          <p><i class="fa-regular fa-circle"></i> Adotar as últimas tendências do mercado.</p>
+          <p><i class="fa-regular fa-circle"></i> Oferecer diferenciais competitivos.</p>
+          <p><i class="fa-regular fa-circle"></i> Conquistar uma posição de destaque no mercado.</p>
+        </div>
+      </div>
+
+      <div class="block-content">
+        <div class="title">
+          <h1>03</h1>
+          <h4>Atrair mais clientes</h4>
+        </div>
+        <div class="content">
+          <p><i class="fa-regular fa-circle"></i> Gerar tráfego qualificado.</p>
+          <p><i class="fa-regular fa-circle"></i> Captar leads e convertê-los em clientes.</p>
+          <p><i class="fa-regular fa-circle"></i> Aumentar as vendas e o faturamento.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="new-letter" class="section-p1">
+
+    <form action="{% url "landpage:home" %}" method="post">
+
+      {% csrf_token %}
+      <div class="col">
+        {{ form.nome }}
+        {% if form.errors.nome %}
+          {{ form.errors.nome }}
+        {% endif %}
+        {{ form.email }}
+        {% if form.errors.email %}
+          {{ form.errors.email }}
+        {% endif %}
+      </div>
+
+      <div class="col">
+        {{ form.telefone }}
+        {% if form.errors.telefone %}
+          {{ form.errors.telefone }}
+        {% endif %}
+        {{ form.nome_empresa }}
+        {% if form.errors.nome_empresa %}
+          {{ form.errors.nome_empresa }}
+        {% endif %}
+      </div>
+
+      <div class="col">
+        {{ form.segmento }}
+        {% if form.errors.segmento %}
+          {{ form.errors.segmento }}
+        {% endif %}
+        {{ form.funcionarios }}
+        {% if form.errors.funcionarios %}
+          {{ form.errors.funcionarios }}
+        {% endif %}
+        {{ form.faturamento }}
+        {% if form.errors.faturamento %}
+          {{ form.errors.faturamento }}
+        {% endif %}
+      </div>
+
+
+      <button type="submit" class="btn-form normal-btn">Enviar</button>
+    </form>
+
+    <div class="text">
+      <h4>Preencher nosso formulário é o primeiro passo para transformar a sua presença online!</h4>
+    </div>
+
+  </section>
+
+{% endblock %}
+  
