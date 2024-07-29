@@ -77,16 +77,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': config('ENGINE'),
-        'NAME': config('NAME'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-    }
-}
+DATABASES = config('DATABASE')
 
 
 # Password validation
