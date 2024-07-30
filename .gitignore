@@ -45,6 +45,7 @@ share/python-wheels/
 MANIFEST
 README.md
 staticfiles/
+.vscode
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
