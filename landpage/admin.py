@@ -3,7 +3,7 @@ from .models import FormularioModel
 
 class FormAdmin(admin.ModelAdmin):
     inlines = [FormularioModel]
-    list_display = ['nome', 'telefone']
+    list_display = ['nome', 'email', 'telefone', 'nome_empresa', 'segmento', 'funcionarios', 'faturamento']
 
 
 
