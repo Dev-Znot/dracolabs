@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import FormularioModel
 
-# Register your models here.
+class FormAdmin(admin.ModelAdmin):
+    inlines = [FormularioModel]
+    list_display = ['nome', 'telefone']
+
+
+
+admin.site.register(FormularioModel, FormAdmin)
